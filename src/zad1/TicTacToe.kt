@@ -110,7 +110,7 @@ class TicTacToe {
             println(this)
             placesLeft--
             //jak wygrana to brak
-            if (validateBoard() != EMPTY) break
+            if (validateBoard() != EMPTY || placesLeft != 0) break
             val idx = ai.getCoords()
             placeMarker(idx, if (playerItem == O) X else O)
             println(this)
